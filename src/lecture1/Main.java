@@ -19,7 +19,7 @@ public class Main {
             System.out.println(i + "番 " + score[i] + "点　" + a);
         }
 
-        kannsuu kannsuu = new kannsuu();
+        Kannsuu kannsuu = new Kannsuu();
 
         int min = kannsuu.Min(score);
         System.out.println("最低点:" + min + "点");
@@ -31,6 +31,8 @@ public class Main {
         System.out.println("平均点:" + ave + "点");
 
     }
+
+
 
     }
 

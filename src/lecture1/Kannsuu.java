@@ -1,6 +1,6 @@
 package lecture1;
 
-public class kannsuu {
+public class Kannsuu {
     int Min(int[] score){
         int min = score[0];
         for (int i = 0;i < score.length;i++){
