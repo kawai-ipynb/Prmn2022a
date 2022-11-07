@@ -3,8 +3,17 @@ package lecture2;
 public class Car {
     int fuel;
 
-    Car(){
+
+    Tire[] tires = new Tire[4];
+
+    Engine engine;
+
+    Car(Tire[] tires, Engine engine){
         this.fuel = 0;
+        this.engine = engine;
+        for (int i = 0;i < tires.length;i++){
+            this.tires[i] = tires[i];
+        }
     }
 
     void run(){
@@ -15,5 +24,9 @@ public class Car {
             fuel = fuel - 1;
             System.out.println("燃料を1消費して走りました。");
         }
+    }
+
+    void startEngine(){
+        engine.start();
     }
 }
